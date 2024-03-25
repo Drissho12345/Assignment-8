@@ -1,0 +1,87 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://s3.amazonaws.com/adg-bucket/the-great-gatsby-by-f-scott-fitzgerald/3419-medium.jpg",
+      "review": "The Great Gatsby is a classic novel depicting the roaring twenties in America, exploring themes of wealth, love, and the American Dream.",
+      "totalPages": 180,
+      "rating": 4.4,
+      "category": "Fiction",
+      "tags": ["Roaring Twenties", "Romance", "Classic"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925,
+      "type": "Novel"
+    },
+    {
+      "bookId": 2,
+      "bookName": "A People's History of the United States",
+      "author": "Howard Zinn",
+      "image": "https://birchbarkbooks.com/cdn/shop/files/inigenous-peoples-10th-anniversary.jpg?v=1697570652",
+      "review": "A People's History of the United States offers a fresh perspective on American history, highlighting the voices and experiences of marginalized groups often overlooked in traditional narratives.",
+      "totalPages": 729,
+      "rating": 4.4,
+      "category": "History",
+      "tags": ["American History", "Social History", "Political History"],
+      "publisher": "Harper & Row",
+      "yearOfPublishing": 1980,
+      "type": "History"
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://www.observerbd.com/2020/01/31/observerbd.com_1580489151.jpg",
+      "review": "The Catcher in the Rye follows the experiences of a disenchanted teenager in New York City, exploring themes of alienation, identity, and authenticity.",
+      "totalPages": 224,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Coming-of-age", "Young Adult", "Classic"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951,
+      "type": "Novel"
+    },
+    {
+      "bookId": 4,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://prodimage.images-bn.com/pimages/9781435159631_p0_v1_s1200x630.jpg",
+      "review": "Pride and Prejudice is a beloved novel of manners, exploring the complexities of love, social status, and personal growth in Regency-era England.",
+      "totalPages": 279,
+      "rating": 4.6,
+      "category": "Classic",
+      "tags": ["Romance", "Social Commentary", "Satire"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813,
+      "type": "Novel"
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image": "https://i.ebayimg.com/images/g/HW4AAOSwYDZgjoaO/s-l400.jpg",
+      "review": "The Hobbit is a timeless fantasy adventure following Bilbo Baggins on a quest to reclaim a stolen treasure, encountering dragons, dwarves, and elves along the way.",
+      "totalPages": 310,
+      "rating": 4.7,
+      "category": "Fantasy",
+      "tags": ["Adventure", "Epic", "Middle-earth"],
+      "publisher": "George Allen & Unwin",
+      "yearOfPublishing": 1937,
+      "type": "Novel"
+    },
+    {
+      "bookId": 6,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://obeygiant.com/images/2015/07/poster_1984_lrg.jpg",
+      "review": "1984 is a dystopian novel depicting a totalitarian regime where individuality is suppressed, and surveillance is omnipresent, exploring themes of power, control, and resistance.",
+      "totalPages": 328,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political", "Classic"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949,
+      "type": "Novel"
+    }
+  ]
+  
