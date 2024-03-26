@@ -2,10 +2,14 @@
 import { CiStar } from "react-icons/ci";
 import { PropTypes } from 'prop-types';
 import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Book = ({book}) => {
     const {image,type,bookName,tags, author,rating,id} = book;
     return (
+        // <Link to={`/BookBio/${id}`} className="transition border-2  hover:scale-105 border-primary hover:border-secondary border-opacity-30 shadow-xl rounded-3xl">
+            
+        // </Link>
         <Link to={`/BookBio/${id}`} className="transition border-2  hover:scale-105 border-primary hover:border-secondary border-opacity-30 shadow-xl rounded-3xl">
             <div className="card">
                 <figure className="px-10 m-5  rounded-3xl bg-[#F3F3F3] pt-10">
