@@ -7,7 +7,7 @@ const BookBio = () => {
     const {id} = useParams();
     const idInt = parseInt(id)
     // console.log(id,allBooks)
-    const user = allBooks.find((u)=>u.id === idInt)
+    const user = allBooks.find((item)=>item.id === idInt)
     // console.log(user)
     const {author,image,bookName,yearOfPublishing,publisher,category,totalPages,review,tags,rating} = user;
     return (
