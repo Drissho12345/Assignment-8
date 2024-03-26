@@ -6,9 +6,9 @@ const BookBio = () => {
     // console.log(allBooks)
     const {id} = useParams();
     const idInt = parseInt(id)
-    console.log(id,allBooks)
+    // console.log(id,allBooks)
     const user = allBooks.find((u)=>u.id === idInt)
-    console.log(user)
+    // console.log(user)
     const {author,image,bookName,yearOfPublishing,publisher,category,totalPages,review,tags,rating} = user;
     return (
         <div className="w-[90%] m-auto">
@@ -51,26 +51,6 @@ const BookBio = () => {
                             <button className="btn text-[18px] text-[#131313] bg-blue-600">Read</button>
                             <button className="btn text-[18px] text-[#FFFFFF] bg-[#50B1C9]">Wishlist</button>
                         </div>
-
-
-
-
-                        {/* <ul className="flex text-[16px] gap-28">
-                            <li>Number of Pages:</li>
-                            <li className="font-bold">{totalPages}</li>
-                        </ul>
-                        <div className="flex text-[16px] gap-28">
-                            <li>Publisher:</li>
-                            <li className="font-bold">{totalPages}</li>
-                        </div>
-                        <div className="flex text-[16px] gap-28">
-                            <li>Year of Publishing:</li>
-                            <li className="font-bold">{totalPages}</li>
-                        </div>
-                        <div className="flex text-[16px] gap-28">
-                            <li>Rating:</li>
-                            <li className="font-bold">{totalPages}</li>
-                        </div> */}
 
                     </div>
                 </div>

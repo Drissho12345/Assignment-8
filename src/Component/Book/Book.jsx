@@ -12,7 +12,7 @@ const Book = ({book}) => {
                     <figure className="px-10 m-5  rounded-3xl bg-[#F3F3F3] pt-10">
                         <img src={image} className="  pb-5 h-[350px]" />
                     </figure>
-                    <div className='pl-6 gap-20 flex'>
+                    <div className='pl-6 gap-16 flex'>
                         <div className='bg-[#F3F3F3] font-bold text-[16px] text-[#23BE0A] rounded-2xl p-3'>
                             <p>{tags[0]}</p>
                         </div>
