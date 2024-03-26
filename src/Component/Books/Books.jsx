@@ -1,9 +1,13 @@
 
 import Book from '../Book/Book';
+// import UseBookData from '../Hooks/UseBookData';
 import Banner from './../Banner/Banner';
 import { useEffect, useState } from 'react';
 
 const Books = () => {
+    // const {data, loading} = UseBookData
+
+
     const [books,setBooks] = useState([]);
 
     useEffect(()=>{

@@ -1,6 +1,6 @@
 [
     {
-      "bookId": 1,
+      "id": 1,
       "bookName": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "image": "https://s3.amazonaws.com/adg-bucket/the-great-gatsby-by-f-scott-fitzgerald/3419-medium.jpg",
@@ -14,7 +14,7 @@
       "type": "Novel"
     },
     {
-      "bookId": 2,
+      "id": 2,
       "bookName": "A People's History of the United States",
       "author": "Howard Zinn",
       "image": "https://birchbarkbooks.com/cdn/shop/files/inigenous-peoples-10th-anniversary.jpg?v=1697570652",
@@ -28,7 +28,7 @@
       "type": "History"
     },
     {
-      "bookId": 3,
+      "id": 3,
       "bookName": "The Catcher in the Rye",
       "author": "J.D. Salinger",
       "image": "https://www.observerbd.com/2020/01/31/observerbd.com_1580489151.jpg",
@@ -42,7 +42,7 @@
       "type": "Novel"
     },
     {
-      "bookId": 4,
+      "id": 4,
       "bookName": "Pride and Prejudice",
       "author": "Jane Austen",
       "image": "https://prodimage.images-bn.com/pimages/9781435159631_p0_v1_s1200x630.jpg",
@@ -56,10 +56,10 @@
       "type": "Novel"
     },
     {
-      "bookId": 5,
+      "id": 5,
       "bookName": "The Hobbit",
       "author": "J.R.R. Tolkien",
-      "image": "https://i.ebayimg.com/images/g/HW4AAOSwYDZgjoaO/s-l400.jpg",
+      "image": "https://d3ddkgxe55ca6c.cloudfront.net/assets/t1496538667/a/af/64/147470-ml-1141823.jpg",
       "review": "The Hobbit is a timeless fantasy adventure following Bilbo Baggins on a quest to reclaim a stolen treasure, encountering dragons, dwarves, and elves along the way.",
       "totalPages": 310,
       "rating": 4.7,
@@ -70,7 +70,7 @@
       "type": "Novel"
     },
     {
-      "bookId": 6,
+      "id": 6,
       "bookName": "1984",
       "author": "George Orwell",
       "image": "https://obeygiant.com/images/2015/07/poster_1984_lrg.jpg",

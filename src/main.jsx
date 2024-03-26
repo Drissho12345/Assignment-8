@@ -11,8 +11,7 @@ import {
 import ListedBook from './Component/ListedBook/ListedBook';
 import ErrorPage from './Component/ErrorPage/ErrorPage';
 import Books from './Component/Books/Books';
-
-// import Banner from './Component/Banner/Banner';
+import BookBio from './Component/BookBio/BookBio';
 
 const router = createBrowserRouter([
   {
@@ -20,10 +19,6 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-      // {
-      //   path:"/",
-      //   element: <Banner></Banner>,
-      // },
       {
         path:"/",
         element: <Books></Books>,
@@ -31,6 +26,11 @@ const router = createBrowserRouter([
       {
         path:"/Listed Books",
         element: <ListedBook></ListedBook>,
+      },
+      {
+        path:"/BookBio/:id",
+        loader: ()=> fetch("/public/Books.json"),
+        element: <BookBio></BookBio>,
       },
       
     ],
