@@ -1,14 +1,32 @@
 
 import { useLoaderData,useParams } from "react-router-dom";
+import {  saveUser } from '../../Component/Utility/Localstoage';
+import { toast } from "react-toastify";
 
 const BookBio = () => {
+    
+    const handleReadBooks = user =>{
+        saveUser(user)
+    }
+   
+    const handleWishlist = (user) =>{
+        saveUser(user)
+        const isExist =user.find(u => u.id === user.id);
+        if(isExist){
+            return toast.error("Books All Ready Read!");
+        }
+        user.push(user);
+        localStorage.setItem('users',JSON.stringify(user))
+        toast.success("Book read successfully!");
+    }
+           
+           
+
+
     const allBooks = useLoaderData();
-    // console.log(allBooks)
     const {id} = useParams();
     const idInt = parseInt(id)
-    // console.log(id,allBooks)
-    const user = allBooks.find(item => item.id == idInt)
-    // console.log(user)
+    const user = allBooks.find((item) => item.id == idInt)
     const {author,image,bookName,yearOfPublishing,publisher,category,totalPages,review,tags,rating} = user;
     return (
         <div className="w-[90%] m-auto">
@@ -48,14 +66,13 @@ const BookBio = () => {
                         </div>
 
                         <div className="flex gap-5 pt-8">
-                            <button className="btn text-[18px] text-[#131313] bg-blue-600">Read</button>
-                            <button className="btn text-[18px] text-[#FFFFFF] bg-[#50B1C9]">Wishlist</button>
+                            <button onClick={()=> handleReadBooks(user)} className="btn text-[18px] text-[#131313] bg-blue-600">Read</button>
+                            <button onClick={()=>handleWishlist(user)} className="btn text-[18px] text-[#FFFFFF] bg-[#50B1C9]">Wishlist</button>
                         </div>
 
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
