@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { getUser } from "../Utility/Localstoage";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
@@ -73,8 +74,8 @@ const ReadChart = () => {
     },[])
     // console.log(data[0])
     return (
-        <div className="w-[90%] m-auto">
-            <BarChart
+        <div className="w-[90%] m-auto mt-9">
+            <BarChart className="bg-[#13131308]"
       width={1200}
       height={500}
       data={data}
@@ -97,7 +98,6 @@ const ReadChart = () => {
         </div>
     );
 };
-
 export default ReadChart;
 
 

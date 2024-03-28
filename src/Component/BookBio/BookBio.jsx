@@ -1,7 +1,7 @@
 
 import { useLoaderData,useParams } from "react-router-dom";
 import {  saveUser,saveWishlistUser } from '../../Component/Utility/Localstoage';
-// import { toast } from "react-toastify";
+
 
 const BookBio = () => {
     

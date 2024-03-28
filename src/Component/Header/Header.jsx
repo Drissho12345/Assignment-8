@@ -6,7 +6,7 @@ const Header = () => {
         <li className="text-[18px] text-[#23BE0A]"><NavLink to="">Home</NavLink></li>
         <li className="text-[18px] text-[#23BE0A]"><NavLink to="/Listed Books">Listed Books</NavLink></li>
         <li className="text-[18px] text-[#23BE0A]"><NavLink to="/Pages to Read">Pages to Read</NavLink></li>
-        <li className="text-[18px] text-[#23BE0A]"><NavLink to="/Item 4">Item 4</NavLink></li>
+        <li className="text-[18px] text-[#23BE0A]"><NavLink to="/User">User</NavLink></li>
         <li className="text-[18px] text-[#23BE0A]"><NavLink to="/Item 5">Item 5</NavLink></li>
     </>
     return (

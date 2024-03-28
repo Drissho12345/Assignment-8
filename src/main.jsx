@@ -13,6 +13,7 @@ import ListedBook from './Component/ListedBook/ListedBook';
 import BookBio from './Component/BookBio/BookBio';
 import ReadBooks from './Component/Read Books/ReadBooks';
 import ReadChart from './Component/readChart/ReadChart';
+import User from './Component/User/User';
 
 
 const  router = createBrowserRouter([
@@ -24,6 +25,10 @@ const  router = createBrowserRouter([
       {
         path: "/",
         element: <Books></Books>,
+      },
+      {
+        path: "/User",
+        element: <User></User>,
       },
       {
         path:"/BookBio/:id",
