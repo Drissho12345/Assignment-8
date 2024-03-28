@@ -13,9 +13,6 @@ const BookBio = () => {
         saveWishlistUser(user);
         console.log()
     }
-           
-           
-
 
     const allBooks = useLoaderData();
     const {id} = useParams();

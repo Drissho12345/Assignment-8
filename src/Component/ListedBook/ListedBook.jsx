@@ -12,7 +12,7 @@ import WishlistBooks from "../Wishlist Books/WishlistBooks";
 const ListedBook = () => {
     const [blogs, setBlogs] = useState([]);
     const [wishlist, setWishlist] =useState([]);
-    console.log(wishlist)
+    // console.log(wishlist)
     useEffect(()=>{
         const storedBooks = getUser();
         setBlogs(storedBooks);
@@ -37,7 +37,7 @@ const ListedBook = () => {
                 </TabList>
 
                 <TabPanel>
-                  <div className=" grid sm:grid-cols-1">
+                  <div>
                   {
                     blogs.map(blog=><ReadBooks key={blog.id} blog={blog}></ReadBooks>)
                   }

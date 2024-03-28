@@ -12,6 +12,7 @@ import Root from './Component/Root/Root';
 import ListedBook from './Component/ListedBook/ListedBook';
 import BookBio from './Component/BookBio/BookBio';
 import ReadBooks from './Component/Read Books/ReadBooks';
+import ReadChart from './Component/readChart/ReadChart';
 
 
 const  router = createBrowserRouter([
@@ -40,6 +41,10 @@ const  router = createBrowserRouter([
           },
           
         ],
+      },
+      {
+        path:"/Pages to Read",
+        element: <ReadChart></ReadChart>
       },
     ],
   },
