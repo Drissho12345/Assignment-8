@@ -1,7 +1,7 @@
 
 import { useLoaderData,useParams } from "react-router-dom";
-import {  saveUser } from '../../Component/Utility/Localstoage';
-import { toast } from "react-toastify";
+import {  saveUser,saveWishlistUser } from '../../Component/Utility/Localstoage';
+// import { toast } from "react-toastify";
 
 const BookBio = () => {
     
@@ -10,14 +10,8 @@ const BookBio = () => {
     }
    
     const handleWishlist = (user) =>{
-        saveUser(user)
-        const isExist =user.find(u => u.id === user.id);
-        if(isExist){
-            return toast.error("Books All Ready Read!");
-        }
-        user.push(user);
-        localStorage.setItem('users',JSON.stringify(user))
-        toast.success("Book read successfully!");
+        saveWishlistUser(user);
+        console.log()
     }
            
            

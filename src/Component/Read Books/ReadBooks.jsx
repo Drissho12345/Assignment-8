@@ -1,58 +1,51 @@
 import { PropTypes } from 'prop-types';
-import { CiLocationOn } from "react-icons/ci";
-import { MdOutlineManageAccounts } from "react-icons/md";
+import { MdOutlineLocationOn, MdOutlineManageAccounts } from "react-icons/md";
 import { LuBookUp } from "react-icons/lu";
 const ReadBooks = ({blog}) => {
     // console.log(blog)
     const {bookName,image,author,totalPages,publisher,yearOfPublishing,rating,tags,category} = blog;
     return (
         <div>
-            <div className="gap-14 grid pt-12 lg:grid-cols-2 sm:grid-cols-1">
-                <div className="card-body flex justify-center items-center rounded-3xl bg-[#1313130D] ">
-                    <img className="w-[300px]" src={image} alt="" />
+            <div className=" flex gap-7 sm:flex-col lg:flex-row border-[2px] rounded-lg mt-9 p-5">
+                <div className="c-img w-[230px] bg-[#F3F3F3] flex justify-center items-center border rounded-[16px]">
+                    <img src={image} alt="" className="w-[129px] h-[172px]" />
                 </div>
-                <div>
-                    <h1 className="text-[40px] font-bold">{bookName}</h1>
-                    <div>
-                        <p className="text-[20px] text-[#131313B2] pb-5 font-bold "><span >By: </span>{author}</p>
-                        
-                        <div className="flex gap-5 pb-2">
-                            <p className="p-3 font-bold">Tag</p>
-                            <div className="p-3 text-[16px] text-[#23BE0A] font-bold rounded-3xl bg-[#23BE0A0D]"><p>#{tags[1]}</p></div>
-                            <div  className="p-3 text-[#23BE0A] rounded-3xl bg-[#23BE0A0D] text-[16px] font-bold"><p>#{tags[2]}</p></div>
-                            
-                            <div className='p-3 flex gap-2'>
-                            <CiLocationOn/>
-                                <div className='text-[#131313CC]'> Year of Publishing: <span className="font-bold">{yearOfPublishing}</span></div>
-                                
-                            </div>
 
-                        </div>
-                            <div className='flex gap-9'>
-                                <div className='flex gap-2'>
-                                    <MdOutlineManageAccounts></MdOutlineManageAccounts>
-                                    <p className=" mb-3">Publisher: <span>{publisher}</span></p>
-                                </div>
-                                <div className='flex gap-2 mb-3'>
-                                    <LuBookUp></LuBookUp>
-                                    <p>Page: <span>{totalPages}</span></p>
-                                </div>
-                            </div>
-                        <hr />
+                <div className="c-details">
+                <h2 className="text-[#131313] text-[40px]">{bookName}</h2>
+                <span  className="text-[#646262] text-[20px]">By : {author}</span>
 
-                        <div className="flex gap-[65px] mt-4">
-                            <div className="text-[16px] bg-[#328EFF26] rounded-3xl  text-[#328EFF]">
-                                <p className='p-2 mt-2 mb-2'>Category: <span>{category}</span></p>
-                            </div>
-                            <div className="text-[16px] rounded-3xl  bg-[#FFAC3326] text-[#FFAC33]">
-                                <p className="mt-2 mb-2 p-2">Rating: <span className="mt-2 mb-2 font-bold">{rating}</span></p> 
-                            </div>
-                            <div>
-                                <button className='btn rounded-3xl bg-[#23BE0A]'>View Details</button>
-                            </div>
+                <div className="flex justify-center items-center gap-5 mt-2 mb-2">
+                    <p className="text-[#131313] text-[16px]">Tag</p>
+                    <p className="text-[16px] text-[#23BE0A] bg-[#e6fae3] border rounded-[20px] px-[20px] py-[8px]">#{tags[1]}</p>
+                        <p className="text-[16px] text-[#23BE0A] bg-[#e6fae3] border rounded-[20px]  px-[20px] py-[8px]">#{tags[2]}</p>
+
+                        <div className='flex justify-center items-center gap-2'>
+                        <MdOutlineLocationOn></MdOutlineLocationOn>
+                        <p className='text-[#131313CC]'> Year of Publishing: <span className="font-bold">{yearOfPublishing}</span></p>
                         </div>
 
+                </div>
+                <div className="flex gap-4 text-[16px]">
+                    <div className="flex gap-3 ">
+                    <MdOutlineManageAccounts></MdOutlineManageAccounts>
+                    <p className=" text-[16px]">Publisher: {publisher}</p>
                     </div>
+                    <div className="flex gap-3">
+                    <LuBookUp></LuBookUp>
+                    <p>Page {totalPages}</p>
+                    </div>
+                </div>
+                <hr  className="mt-4 mb-4"/>
+
+                <div className="flex gap-5">
+                    <p className="text-[#328EFF] text-4 px-[11px] py-[12px] bg-[#a5c9f5] rounded-[30px]">Category: {category}</p>
+                    <p className="text-[#FFAC33] text-4 px-[11px] py-[12px] bg-[#fdf3f3] rounded-[30px]">Rating: {rating}</p>
+                    
+                    <button className="text-[#FFF] text-[18px] px-[20px] py-[10px] bg-[#23BE0A] border rounded-[30px]">View Details</button>
+                
+                
+                </div>
                 </div>
             </div>
         </div>
