@@ -14,6 +14,8 @@ import BookBio from './Component/BookBio/BookBio';
 import ReadBooks from './Component/Read Books/ReadBooks';
 import ReadChart from './Component/readChart/ReadChart';
 import User from './Component/User/User';
+import ViewData from './Component/ViewData/ViewData';
+import ViewReadData from './Component/ViewReadData/ViewReadData';
 
 
 const  router = createBrowserRouter([
@@ -29,6 +31,16 @@ const  router = createBrowserRouter([
       {
         path: "/User",
         element: <User></User>,
+      },
+      {
+        path: "/ViewData/:id",
+        element: <ViewData></ViewData>,
+        loader: ()=>fetch("/Books.json"),
+      },
+      {
+        path: "/ViewReadData/:id",
+        element: <ViewReadData></ViewReadData>,
+        loader: ()=>fetch("/Books.json"),
       },
       {
         path:"/BookBio/:id",

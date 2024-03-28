@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 const Book = ({book}) => {
     const {image,type,bookName,tags, author,rating,id} = book;
     return (
-        <Link to={`/BookBio/${id}`} className="transition border-2  hover:scale-105 border-primary hover:border-secondary border-opacity-30 shadow-xl rounded-3xl">
-            <div className="card">
-                <figure className="px-10 m-5  rounded-3xl bg-[#F3F3F3] pt-10">
-                    <img src={image} className="  pb-5 h-[350px]" />
+        <Link to={`/BookBio/${id}`} className="transition border-2  md:hover:scale-105 border-primary hover:border-secondary border-opacity-30 shadow-xl rounded-3xl md:w-full md:w-[90%] mx-auto">
+            <div className="card ">
+                <figure className="md:px-10 m-5  rounded-3xl bg-[#F3F3F3] pt-10">
+                    <img src={image} className=" w-full pb-5 md:h-[350px]" />
                 </figure>
-                <div className='pl-6 gap-20 flex'>
+                <div className='md:pl-6 md:gap-20 gap-2 p-2 flex'>
                     <div className='bg-[#F3F3F3] font-bold text-[16px] text-[#23BE0A] rounded-2xl p-3'>
                         <p>{tags[0]}</p>
                     </div>
@@ -19,7 +19,7 @@ const Book = ({book}) => {
                         <p>{tags[1]}</p>
                     </div>
                 </div>
-                <div className="pl-6 pr-6">
+                <div className="md:pl-6 md:pr-6">
                     <h2 className="card-title text-[24px] pt-4">{bookName}</h2>
                     <p className='text-[#131313CC] pt-2 pb-4 text-[18px]'>By: {author}</p>
                     <hr />

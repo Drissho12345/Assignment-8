@@ -1,9 +1,10 @@
 import { PropTypes } from 'prop-types';
 import { MdOutlineLocationOn, MdOutlineManageAccounts } from "react-icons/md";
 import { LuBookUp } from "react-icons/lu";
+import { Link } from 'react-router-dom';
 const ReadBooks = ({blog}) => {
     // console.log(blog)
-    const {bookName,image,author,totalPages,publisher,yearOfPublishing,rating,tags,category} = blog;
+    const {bookName,id,image,author,totalPages,publisher,yearOfPublishing,rating,tags,category} = blog;
     return (
         <div>
             <div className=" flex gap-7 sm:flex-col lg:flex-row border-[2px] rounded-lg mt-9 p-5">
@@ -42,7 +43,9 @@ const ReadBooks = ({blog}) => {
                     <p className="text-[#328EFF] text-4 px-[11px] py-[12px] bg-[#a5c9f5] rounded-[30px]">Category: {category}</p>
                     <p className="text-[#FFAC33] text-4 px-[11px] py-[12px] bg-[#fdf3f3] rounded-[30px]">Rating: {rating}</p>
                     
-                    <button className="text-[#FFF] text-[18px] px-[20px] py-[10px] bg-[#23BE0A] border rounded-[30px]">View Details</button>
+                    <Link to={`/ViewReadData/${id}`}>
+                        <button className="text-[#FFF] text-[18px] px-[20px] py-[10px] bg-[#23BE0A] border rounded-[30px]">View Details</button>
+                    </Link>
                 
                 
                 </div>
